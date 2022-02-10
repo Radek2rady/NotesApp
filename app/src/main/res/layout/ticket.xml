@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/background_layout"
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="18sp" />
+
+        <TextView
+            android:paddingLeft="10pt"
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A central pattern generator (CPG) is a neuronal network in which interconnected excitatory and inhibitory neurons produce an oscillating, rhythmic output in the absence of sensory feedback. CPGs play an important part in motor behaviour such as breathing, swimming and locomotion." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="10pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:padding="5pt"
+                app:srcCompat="@drawable/bin" />
+
+            <ImageView
+                android:id="@+id/ivEdit"
+                android:layout_width="10pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:padding="5pt"
+                app:srcCompat="@drawable/draw" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
